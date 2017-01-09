@@ -1,0 +1,38 @@
+<ion-view view-title="Inspection Reports" >
+    <ion-content overflow-scroll="true">
+        <ion-list ng-repeat="rpt in reports">
+            <div class="card">
+                <div class="item item-divider item-avatar">
+                    <img src="{{rpt.agentUrl}}" />
+                    <h2>Agent: {{rpt.agent}}</h2>
+                    <p>Date: {{rpt.reportdate}}</p>
+                    <p>{{rpt.summary}}</p>
+                </div>
+                <div class="item item-text-wrap">
+                    {{rpt.details}}
+                </div>
+                <div class="item item-divider">
+                    <div class="list">
+                        <p class="item item-icon-left item-icon-right">
+                            <i class="icon ion-cash"></i>
+                            Bills
+                            <i class="icon ion-checkmark"></i>
+                        </p>
+                        <p class="item item-icon-left item-icon-right">
+                            <i class="icon ion-ribbon-b"></i>
+                            Tax
+                            <i class="icon ion-checkmark"></i>
+                        </p>
+                        <p class="item item-icon-left item-icon-right">
+                            <i class="icon ion-person-stalker"></i>
+                            Neighbours
+                            <i class="icon ion-checkmark"></i>
+                        </p>
+                    </div>
+                    <button class="button button-small button-balanced" type="submit">Acknowledge</button>
+                    <button class="button button-small button-positive" type="submit">IM Agent</button>
+                </div>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>

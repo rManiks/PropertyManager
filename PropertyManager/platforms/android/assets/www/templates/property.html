@@ -1,0 +1,36 @@
+<ion-view view-title="Property">
+  <ion-content>
+      <div class="list card">
+
+          <div class="item item-avatar">
+              <img src="{{property[0].avatarUrl}}">
+              <h2>{{property[0].landlord}}</h2>
+              <p>{{property[0].address}}</p>
+          </div>
+
+          <div class="item item-body">
+              <img class="full-image" src="{{property[0].imgUrl}}">
+              <p>
+                  some commentary goes here..
+              </p>
+              <p>
+                  <a href="#" class="subdued">5 Comments</a>
+              </p>
+          </div>
+
+          <div class="item item-footer">
+              <div class="list">
+                  <a class="item item-icon-left" ui-sref="app.reports({pid: property[0].id})">
+                      <i class="icon ion-document-text"></i>
+                      Inspection Reports
+                  </a>
+                  <a class="item item-icon-left" href="#">
+                      <i class="icon ion-chatbubble"></i>
+                      IM Agent
+                      <span class="badge badge-assertive">5</span>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </ion-content>
+</ion-view>

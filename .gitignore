@@ -240,3 +240,8 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/PropertyManager/platforms/android/.gradle/2.2.1/taskArtifacts
+/PropertyManager/platforms/android/assets/www/lib
+/PropertyManager/platforms/android/assets/www/plugins
+/PropertyManager/plugins
+/PropertyManager/www/lib
